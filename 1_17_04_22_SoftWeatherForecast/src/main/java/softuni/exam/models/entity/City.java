@@ -27,7 +27,8 @@ public class City extends BaseEntity{
     @Column
     private int population;
 
-    @OneToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "country_id")
     private Country country;
 
     @Override
