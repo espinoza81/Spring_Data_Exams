@@ -27,10 +27,10 @@ public class Offer extends BaseEntity{
     @Column(name = "published_on", nullable = false)
     private LocalDate publishedOn;
 
-    @OneToOne
+    @ManyToOne
     private Apartment apartment;
 
-    @OneToOne
+    @ManyToOne
     private Agent agent;
 
     public String importInfo(){
