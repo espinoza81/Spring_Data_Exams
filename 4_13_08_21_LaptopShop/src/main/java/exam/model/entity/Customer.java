@@ -31,7 +31,7 @@ public class Customer extends BaseEntity{
     @Column(name = "registered_on", nullable = false)
     private LocalDate registeredOn;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Town town;
 
     @Override
