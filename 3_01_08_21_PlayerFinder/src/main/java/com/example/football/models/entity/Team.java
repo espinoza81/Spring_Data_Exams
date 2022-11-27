@@ -31,7 +31,7 @@ public class Team extends BaseEntity{
     @Column(nullable = false, columnDefinition = "TEXT")
     private String history;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Town town;
 
     @Override
