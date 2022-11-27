@@ -23,7 +23,7 @@ public class Apartment extends BaseEntity{
     @Column
     private double area;
 
-    @OneToOne
+    @ManyToOne
     private Town town;
 
     @Override
