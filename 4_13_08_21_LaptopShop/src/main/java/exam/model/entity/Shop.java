@@ -35,7 +35,7 @@ public class Shop extends BaseEntity{
     @Column(name = "shop_area", nullable = false)
     private int shopArea;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Town town;
 
     @Override
