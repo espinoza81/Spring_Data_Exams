@@ -33,7 +33,7 @@ public class Forecast extends BaseEntity {
     @Column(nullable = false)
     private LocalTime sunset;
 
-    @OneToOne
+    @ManyToOne
     private City city;
 
     public String importForecast(){
