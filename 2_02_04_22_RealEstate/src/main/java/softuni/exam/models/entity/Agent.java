@@ -28,7 +28,7 @@ public class Agent extends BaseEntity{
     @Column(unique = true, nullable = false)
     private String email;
 
-    @OneToOne
+    @ManyToOne
     private Town town;
 
     @Override
