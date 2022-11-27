@@ -39,7 +39,7 @@ public class Laptop extends BaseEntity{
     @Column(name = "warranty_type", nullable = false)
     private WarrantyType warrantyType;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Shop shop;
 
     @Override
