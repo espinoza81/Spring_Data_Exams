@@ -35,10 +35,10 @@ public class Player extends BaseEntity{
     @Column
     private PlayerPosition position;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Town town;
 
-    @OneToOne
+    @ManyToOne(optional = false)
     private Team team;
 
     @OneToOne
